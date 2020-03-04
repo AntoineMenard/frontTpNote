@@ -26,9 +26,9 @@
                                         [(ngModel)]="person.mdp" name="mdp">
                                 </div>
                                 <nav>
-                                    <button class="btn btn-primary " type="submit" RouteurLink="connection"> Valider
+                                    <button class="btn btn-primary " type="submit" > Valider
                                         l'inscription</button>
-                                    <button class="btn btn-primary mr-sm-2" RouteurLink="connection"> Annuler </button>
+                                    <button class="btn btn-primary mr-sm-2" (click) = "goToConnection()"> Annuler </button>
                                 </nav>
 
                             </form>
@@ -40,3 +40,4 @@
         <div class="col-sm-2"></div>
     </div>
 </div>
+<router-outlet></router-outlet>
