@@ -12,6 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { NoteComponent } from './note/note.component';
 import { ConnectionComponent } from './connection/connection.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ConnectionComponent } from './connection/connection.component';
     MatIconModule,
     MatFormFieldModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
