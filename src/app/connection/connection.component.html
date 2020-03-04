@@ -1,0 +1,34 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-header formhead">
+                    <p class="font-weight-bold"> Formulaire d'inscription</p>
+                </div>
+                <div class="card_body">
+                    <div class="container">
+                        <br>
+                        
+                        <div>
+                            <form (ngSubmit) = "addPerson()">
+                                <div class="form-group">
+                                    <input type="text " class="form-control" placeholder="nom" [(ngModel)] = "person.nom">
+                                </div>                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="identifiant" [(ngModel)] = "person.id"> 
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="mot de passe" type="password" [(ngModel)] = "person.mdp">
+                                </div>
+                                <button class="btn btn-primary   btn-block" type="submit"> Valider l'inscription</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
