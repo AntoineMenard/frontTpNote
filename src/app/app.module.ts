@@ -12,13 +12,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { NoteComponent } from './note/note.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { AddNoteComponent } from './add-note/add-note.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InscriptionComponent,
-    NoteComponent
+    NoteComponent,
+    AddNoteComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatDialogModule
   ],
   providers: [],
+  entryComponents: [AddNoteComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

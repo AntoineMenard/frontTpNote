@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient } from '@angular/common/http';
+import { MatDialog } from '@angular/material/dialog';
+import { AddNoteComponent } from '../add-note/add-note.component';
 
 @Component({
   selector: 'app-note',
@@ -8,7 +10,10 @@ import {HttpClient } from '@angular/common/http';
 })
 export class NoteComponent implements OnInit {
   note;
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private dialog: MatDialog
+    ) { }
 
   ngOnInit(): void {
 
@@ -20,5 +25,9 @@ export class NoteComponent implements OnInit {
       });
 
   }
+
+  openDialog() {
+    const mydial = this.dialog.open(AddNoteComponent);
+}
 
 }
