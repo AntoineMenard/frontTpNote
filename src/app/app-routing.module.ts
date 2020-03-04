@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { NoteComponent } from './Note/note.component';
 
 
 const routes: Routes = [
   {path : 'inscription', component : InscriptionComponent},
+  {path : 'note', component : NoteComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
+export class AppRoutingModule {
 
 }
