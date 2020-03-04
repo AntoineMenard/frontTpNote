@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-inscription',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InscriptionComponent implements OnInit {
 
-  constructor() { }
+  person;
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  addPerson() {
+
   }
 
 }
