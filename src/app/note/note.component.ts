@@ -12,7 +12,7 @@ export class NoteComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.http.get('http://localhost:8087/note').subscribe(data => {
+    this.http.get('http://localhost:8088/note').subscribe(data => {
     console.log(data);
     this.note = data;
       }, err => {

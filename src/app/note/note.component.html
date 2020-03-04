@@ -13,6 +13,8 @@
                         <th>CONTENU</th>
                         <th>DATE</th>
                         <th>PERSON</th>
+                        <th>EDIT</th>
+                        <th>DELETE</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,6 +23,13 @@
                         <td>{{n.contenu}}</td>
                         <td>{{n.date}}</td>
                         <td>{{n.person.nom}}</td>
+                        <td class="text-center">
+                            <button class="btn"><i class="material-icons">edit</i></button>
+                        </td>
+                        <td class="text-center">
+
+                            <button class="btn"><i style="color:darkred" class="material-icons" >delete</i></button>
+                        </td>
                     </tr>
                 </tbody>
 
