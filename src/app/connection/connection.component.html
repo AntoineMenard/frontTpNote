@@ -5,22 +5,18 @@
         <div class="col-sm-8">
             <div class="card">
                 <div class="card-header formhead">
-                    <p class="font-weight-bold"> Formulaire d'inscription</p>
+                    <p class="font-weight-bold"> Formulaire de connection</p>
                 </div>
                 <div class="card_body">
                     <div class="container">
                         <br>
-                        
                         <div>
-                            <form >
+                            <form (ngSubmit) = "checkPerson()">
                                 <div class="form-group">
-                                    <input type="text " class="form-control" placeholder="nom" >
-                                </div>                                
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="identifiant" > 
+                                    <input type="text" class="form-control" placeholder="identifiant" [(ngModel)] = "person.login" name="identifiant">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="mot de passe" type="password">
+                                    <input type="text" class="form-control" placeholder="mot de passe" [(ngModel)] = "person.mdp" type="password" name="mdp">
                                 </div>
                                 <button class="btn btn-primary   btn-block" type="submit"> Connection</button>
                             </form>
