@@ -1,1 +1,27 @@
-<p>add-note works!</p>
+<div class="container">
+
+            <div class="card">
+                <div class="card-header formhead">
+                    <p > Ajouter une note</p>
+                </div>
+                <div class="card_body">
+                    <div class="container">
+                        <br>
+                        
+                        <div>
+                            <form (ngSubmit)="addNote()">
+                                <div class="form-group">
+                                    <input type="text " class="form-control" placeholder="Contenu de votre note" [(ngModel)] = "note.contenu" name="contenu">
+                                </div>                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Destinataire" [(ngModel)] = "person.nom" name="destinataire" > 
+                                </div>
+                                <button class="btn btn-primary " type="submit"> Valider</button>
+                                <button class="btn btn-primary "  >Retour</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+</div>
