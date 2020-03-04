@@ -1,6 +1,7 @@
 export class Person {
-    id: number;
     nom: string;
+    login: number;
+    mdp: string;
 
     constructor() {
     }
