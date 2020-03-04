@@ -18,17 +18,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor= "let n of note" class="text-center">
-                        <td>{{n.id}}</td>
-                        <td>{{n.contenu}}</td>
-                        <td>{{n.date}}</td>
-                        <td>{{n.person.nom}}</td>
+                    <tr *ngFor= "let n of note" class="text-center" >
+                        <td class="tdMiddle" >{{n.id}}</td>
+                        <td class="tdMiddle">{{n.contenu}}</td>
+                        <td class="tdMiddle">{{n.date}}</td>
+                        <td class="tdMiddle">{{n.person.nom}}</td>
                         <td class="text-center">
-                            <button class="btn"><i class="material-icons">edit</i></button>
+                            <button mat-icon-button color="primary"> <mat-icon>edit</mat-icon> </button>
                         </td>
                         <td class="text-center">
 
-                            <button class="btn"><i style="color:darkred" class="material-icons" >delete</i></button>
+                            <button mat-icon-button color="warn"> <mat-icon>delete_outline</mat-icon> </button>
                         </td>
                     </tr>
                 </tbody>
