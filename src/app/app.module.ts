@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { NoteComponent } from './note/note.component';
+import { ConnectionComponent } from './connection/connection.component';
 import {MatDialogModule} from '@angular/material/dialog';
 
 
@@ -18,7 +19,8 @@ import {MatDialogModule} from '@angular/material/dialog';
   declarations: [
     AppComponent,
     InscriptionComponent,
-    NoteComponent
+    NoteComponent,
+    ConnectionComponent
   ],
   imports: [
     BrowserModule,
