@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InscriptionComponent } from './inscription/inscription.component';
-import { NoteComponent } from './Note/note.component';
+import { NoteComponent } from './note/note.component';
 
 
 const routes: Routes = [
