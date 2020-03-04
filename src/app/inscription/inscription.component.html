@@ -10,20 +10,27 @@
                 <div class="card_body">
                     <div class="container">
                         <br>
-                        
+
                         <div>
-                            <form (ngSubmit) = "addPerson()">
+                            <form (ngSubmit)="addPerson()">
                                 <div class="form-group">
-                                    <input type="text " class="form-control" placeholder="nom" [(ngModel)] = "person.nom" name="nom">
-                                </div>                                
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="identifiant" [(ngModel)] = "person.login" name="login" > 
+                                    <input type="text " class="form-control" placeholder="nom" [(ngModel)]="person.nom"
+                                        name="nom">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="mot de passe" type="password" [(ngModel)] = "person.mdp" name="mdp">
+                                    <input type="text" class="form-control" placeholder="identifiant"
+                                        [(ngModel)]="person.login" name="login">
                                 </div>
-                                <button class="btn btn-primary " type="submit" RouteurLink = "index"> Valider l'inscription</button>
-                                <button class="btn btn-primary "  > retour </button>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="mot de passe" type="password"
+                                        [(ngModel)]="person.mdp" name="mdp">
+                                </div>
+                                <nav>
+                                    <button class="btn btn-primary " type="submit" RouteurLink="connection"> Valider
+                                        l'inscription</button>
+                                    <button class="btn btn-primary mr-sm-2" RouteurLink="connection"> Annuler </button>
+                                </nav>
+
                             </form>
                         </div>
                     </div>
