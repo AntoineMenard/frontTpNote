@@ -19,7 +19,7 @@ export class InscriptionComponent implements OnInit {
     this.http.post('http://localhost:8088/createperson', this.person)
     .subscribe(data => {
 
-    }, err =>{
+    }, err => {
       console.log(err);
     });
 
